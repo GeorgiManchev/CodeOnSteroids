@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EB98827B-5982-4BAB-BFC5-8C73C8F1CEFD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Decorator</RootNamespace>
-    <AssemblyName>Decorator</AssemblyName>
+    <RootNamespace>DecoratorExample</RootNamespace>
+    <AssemblyName>DecoratorExample</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
@@ -44,9 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleLogger.cs" />
-    <Compile Include="DateLoggerDecorator.cs" />
-    <Compile Include="ILogger.cs" />
+    <Compile Include="Loggers\ConsoleLogger.cs" />
+    <Compile Include="Loggers\DateLoggerDecorator.cs" />
+    <Compile Include="Contracts\ILogger.cs" />
     <Compile Include="NinjectModules\LoggerNames.cs" />
     <Compile Include="NinjectModules\MainModule.cs" />
     <Compile Include="StartUp.cs" />

@@ -1,6 +1,7 @@
-﻿using System;
+﻿using DecoratorExample.Contracts;
+using System;
 
-namespace Decorator
+namespace DecoratorExample.Loggers
 {
     public class DateLoggerDecorator : ILogger
     {

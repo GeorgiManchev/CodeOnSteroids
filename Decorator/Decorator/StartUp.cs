@@ -1,7 +1,8 @@
-﻿using Decorator.NinjectModules;
+﻿using DecoratorExample.Contracts;
+using DecoratorExample.NinjectModules;
 using Ninject;
 
-namespace Decorator
+namespace DecoratorExample
 {
     public class StartUp
     {

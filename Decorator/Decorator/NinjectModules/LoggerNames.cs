@@ -1,4 +1,4 @@
-﻿namespace Decorator.NinjectModules
+﻿namespace DecoratorExample.NinjectModules
 {
     public static class LoggerNames
     {

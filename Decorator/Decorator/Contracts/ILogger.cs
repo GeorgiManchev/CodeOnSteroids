@@ -1,4 +1,4 @@
-﻿namespace Decorator
+﻿namespace DecoratorExample.Contracts
 {
     public interface ILogger
     {
