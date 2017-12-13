@@ -1,7 +1,7 @@
-﻿using DecoratorExample.Contracts;
+﻿using ExtendingBehavior.Contracts;
 using System;
 
-namespace DecoratorExample.Loggers
+namespace ExtendingBehavior.Loggers
 {
     public class ConsoleLogger : ILogger
     {

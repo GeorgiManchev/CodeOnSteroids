@@ -1,4 +1,4 @@
-﻿namespace DecoratorExample.Contracts
+﻿namespace ExtendingBehavior.Contracts
 {
     public interface ILogger
     {

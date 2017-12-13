@@ -1,23 +1,25 @@
-﻿using DecoratorExample.Contracts;
+﻿using ExtendingBehavior.Contracts;
 using System;
 
-namespace DecoratorExample.Loggers
+namespace ExtendingBehavior.Loggers
 {
-    public class DateLoggerDecorator : ILogger
+    public class PrependDateLogger : ILogger
     {
+        //logger to be decorated/extended
         private readonly ILogger logger;
 
-        //Get the class to be decorated/extended
-        public DateLoggerDecorator(ILogger logger)
+        public PrependDateLogger(ILogger logger)
         {
             this.logger = logger ?? throw new ArgumentNullException("Logger");
         }
 
-        //Decorate existing logic without changing its implementation
+        //decorate/extend existing logic without changing its implementation
         public void Log(string message)
         {
+            //some new logic
             var decoratedMessage = $"{DateTime.UtcNow}: {message}";
             this.logger.Log(decoratedMessage);
+            //or here
         }
     }
 }
